@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'highcharts-ng'
+    'highcharts-ng',
+    'app.constants'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
 

@@ -5,12 +5,12 @@
 		.module('dataVizApp')
 		.controller('MainCtrl', MainCtrl);
 
-		MainCtrl.$inject = ['$scope', 'mainService'];
+		MainCtrl.$inject = ['$scope', 'mainService', 'titans', 'niners'];
 
-		function MainCtrl($scope, mainService) {
+		function MainCtrl($scope, mainService, titans, niners) {
 
 			var vm = $scope;
-			vm.chartConfig = mainService.getChartConfig();
+			vm.chartConfig = mainService.getChartConfig(niners);
 
 		}
 	
