@@ -89,3 +89,11 @@ body {
     border-bottom: 0;
   }
 }
+
+// override navbar to remove gap 
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: none;
+}

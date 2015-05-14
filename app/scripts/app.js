@@ -18,17 +18,18 @@ angular
     'ngTouch',
     'ui.router',
     'highcharts-ng',
-    'app.constants'
+    'app.constants',
+    'ui.bootstrap'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
 
   // For any unmatched url, redirect to /portfolio
-  $urlRouterProvider.otherwise('/main');
+  $urlRouterProvider.otherwise('/main/');
 
   // States
   $stateProvider
   .state('main', {
-    url: '/main',
+    url: '/main/:team',
     templateUrl: 'views/main.html',
     controller: 'MainCtrl',
   })

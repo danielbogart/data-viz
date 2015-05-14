@@ -5,12 +5,16 @@
 		.module('dataVizApp')
 		.controller('MainCtrl', MainCtrl);
 
-		MainCtrl.$inject = ['$scope', 'mainService', 'titans', 'niners'];
+		MainCtrl.$inject = ['$scope', '$stateParams', 'mainService', 'titans', 'niners'];
 
-		function MainCtrl($scope, mainService, titans, niners) {
+		function MainCtrl($scope, $stateParams, mainService, titans, niners) {
 
 			var vm = $scope;
-			vm.chartConfig = mainService.getChartConfig(niners);
+			var teamObject = mainService.getTeamObject($stateParams.team);
+			
+			//catch for incorrect/blank params
+			if (!teamObject) { teamObject = mainService.getTeamObject('niners'); };
+			vm.chartConfig = mainService.getChartConfig(teamObject);
 
 		}
 	

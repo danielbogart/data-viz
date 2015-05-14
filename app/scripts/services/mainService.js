@@ -6,18 +6,45 @@
 		.factory('mainService', mainService);
 
 
-		mainService.$inject = ['titans', 'niners'];
+		mainService.$inject = ['titans', 'niners', 'cardinals', 'falcons'];
 
-		function mainService(titans, niners) {
+		function mainService(titans, niners, cardinals, falcons) {
 
 			var service = {
-				getChartConfig: getChartConfig
+				getChartConfig: getChartConfig,
+				getTeamObject: getTeamObject
 			};
 
 			return service;
 
-			function getChartConfig(params) {
+
+			function getTeamObject(team) {
+				var teams = { 
+					'titans': titans,
+					'niners': niners,
+					'cardinals': cardinals,
+					'falcons': falcons
+				}
+				return teams[team];
+			}
+
+			function getChartConfig(teamObject) {
 				
+				var wins = 0;
+				var losses = 0;
+
+				function sum(varName, type) {
+					for (var i = teamObject[type].length; i--;) {
+						varName += teamObject[type][i];
+					}
+					return varName;
+				}
+
+				var wins = sum(wins, 'wins');
+				var losses = sum(losses, 'losses');
+
+				var overallRecord = '(' + wins + ' wins and ' + losses + ' losses)';
+
 				var chart = {
 							options: {
 								chart: {
@@ -26,30 +53,30 @@
 								}
 							},
 							series: [{
-								data: params.losses,
+								data: teamObject.losses,
 								id: 'losses',
 								name: 'Losses',
-								color: params.lossColor,
+								color: teamObject.lossColor,
 								dataLabels: {
 							                    enabled: true,
 							                    allowOverlap: true
 							                }
 							},
 							{
-								data: params.wins,
+								data: teamObject.wins,
 								id: 'wins',
 								name: 'Wins',
-								color: params.winColor,
+								color: teamObject.winColor,
 								dataLabels: {
 							                    enabled: true,
 							                    allowOverlap: true
 							                }
 							}],
 							title: {
-								text: params.teamName + ' Heads Up Records'
+								text: teamObject.teamName + ' Heads Up Records <br>' + overallRecord
 							},
 							xAxis: {
-								categories: params.teams
+								categories: teamObject.teams
 							},
 							plotOptions: {
 							            series: {
