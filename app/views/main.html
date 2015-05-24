@@ -1,14 +1,28 @@
-<div ng-controller='DropdownCtrl'>
-    <div class="btn-group pull-right" dropdown is-open="status.isopen">
-      <button type="button" class="btn btn-default dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-        Choose Team <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li><a ui-sref="main({team: 'cardinals'})">Arizona Cardinals</a></li>
-        <li><a ui-sref="main({team: 'falcons'})">Atlanta Falcons</a></li>
-        <li><a ui-sref="main({team: 'titans'})">Tennesse Titans</a></li>
-        <li><a ui-sref="main({team: 'niners'})">San Francisco 49ers</a></li>
-      </ul>
+<div class="row data-row">
+  <div class="col-md-3 title-box">
+    <h1>NFL All Time Heads Up Records</h1>
+    <h5>Created by <a href="https://twitter.com/daniel_bogart">@daniel_bogart</a></h5>
+    <div ng-controller='DropdownCtrl' class="col-md-12 teams-dropdown">
+        <div class="btn-group pull-left" dropdown is-open="status.isopen">
+          <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+            Choose Team <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a ui-sref="main({team: 'cardinals'})">Arizona Cardinals</a></li>
+            <li><a ui-sref="main({team: 'falcons'})">Atlanta Falcons</a></li>
+            <li><a ui-sref="main({team: 'titans'})">Tennesse Titans</a></li>
+            <li><a ui-sref="main({team: 'niners'})">San Francisco 49ers</a></li>
+            <li><a ui-sref="main({team: 'eagles'})">Philadelphia Eagles</a></li>
+          </ul>
+        </div>
     </div>
+    <div class="share-buttons">
+      <div class="fb-share-button" data-href="https://dbogs.com" data-layout="button"></div>
+      <br>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="daniel_bogart" data-size="medium" data-count="none">Tweet</a>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <highchart id="chart1" config="chartConfig" class="span10"></highchart>
+  </div>
 </div>
-<highchart id="chart1" config="chartConfig" class="span10"></highchart>

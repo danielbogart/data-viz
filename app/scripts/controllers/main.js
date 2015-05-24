@@ -15,7 +15,6 @@
 			//catch for incorrect/blank params
 			if (!teamObject) { teamObject = mainService.getTeamObject('niners'); };
 			vm.chartConfig = mainService.getChartConfig(teamObject);
-
 		}
 	
 })();

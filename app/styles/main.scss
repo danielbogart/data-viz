@@ -70,7 +70,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    // max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -96,4 +96,24 @@ body {
   min-height: 50px;
   margin-bottom: 0px;
   border: none;
+}
+.main-bg {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  margin: 0 auto 30px auto;
+  padding: 4em;
+  -moz-box-shadow: 0 0 8px #CCC;
+  -webkit-box-shadow: 0 0 12px 6px #CCC;
+}
+.share-buttons > .fb-share-button, .share-buttons > .twitter-share-button {
+  margin: 5px;
+}
+.data-row {
+  margin: 0px 20px 0px 20px;
+}
+.teams-dropdown {
+  padding: 0px;
+  margin: 5px 3px;
 }
