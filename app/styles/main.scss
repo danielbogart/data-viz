@@ -24,7 +24,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -91,11 +90,21 @@ body {
 }
 
 // override navbar to remove gap 
-.navbar {
+.header > .navbar {
   position: relative;
   min-height: 50px;
   margin-bottom: 0px;
   border: none;
+  background-color: #5bc0de;
+  border-bottom: 1px solid #46b8da;
+  border-radius: 0px;
+}
+.navbar-header > .navbar-brand {
+  color: white;
+  font-weight: normal;
+}
+.navbar-header > .navbar-brand:hover {
+  color: white;
 }
 .main-bg {
   position: relative;

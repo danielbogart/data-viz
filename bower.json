@@ -13,7 +13,6 @@
     "angular-ui-router": "~0.2.14",
     "highcharts-ng": "~0.0.8",
     "angular-highcharts": "*",
-    "angular-bootstrap": "~0.13.0",
     "flat-ui": "~2.2.2"
   },
   "devDependencies": {

@@ -33,7 +33,6 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/highcharts-ng/dist/highcharts-ng.js',
-      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/videojs/dist/video-js/video.js',
       'bower_components/flat-ui/dist/js/flat-ui.js',
       'bower_components/angular-mocks/angular-mocks.js',

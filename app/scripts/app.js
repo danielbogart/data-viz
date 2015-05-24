@@ -18,8 +18,7 @@ angular
     'ngTouch',
     'ui.router',
     'highcharts-ng',
-    'app.constants',
-    'ui.bootstrap'
+    'app.constants'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
 
