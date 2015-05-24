@@ -82,8 +82,8 @@
 									type: 'bar',
 									height: 3000,
 									style: {
-										fontFamily: "Helvetica"
-									}
+										fontFamily: "Helvetica Neue"
+									},
 								},
 								tooltip: {
 									borderRadius: 5,
@@ -98,6 +98,10 @@
 							},
 
 							series: [{
+				                pointPadding: 0,
+				                groupPadding: 0.1,
+				                borderWidth: 0,
+				                shadow: false,
 								data: teamObject.losses,
 								id: 'losses',
 								name: 'Losses',
@@ -108,6 +112,10 @@
 							                }
 							},
 							{
+								pointPadding: 0,
+				                groupPadding: 0.1,
+				                borderWidth: 0,
+				                shadow: false,
 								data: teamObject.wins,
 								id: 'wins',
 								name: 'Wins',
@@ -118,6 +126,10 @@
 							                }
 							},
 							{
+								pointPadding: 0,
+				                groupPadding: 0.1,
+				                borderWidth: 0,
+				                shadow: false,
 								data: teamObject.ties,
 								id: 'ties',
 								name: 'Ties',
@@ -137,18 +149,28 @@
 							},
 							xAxis: {
 								categories: teamObject.teams,
-								tickLength: 0
+								tickLength: 0,
+								labels: {
+									style: { 
+										color: 'black',
+									}
+								}
 							},
 							yAxis: {
-								minTickInterval: 10
+								minTickInterval: 10,
+								labels: {
+									style: { 
+										color: 'black',
+									}
+								}
 							},
 							plotOptions: {
-							            series: {
-							                dataLabels: {
-							                    enabled: true
-							                }
-							            }
-							        },
+					            series: {
+					                dataLabels: {
+					                    enabled: false	
+					                },
+					            }
+					        },
 
 
 							loading: false

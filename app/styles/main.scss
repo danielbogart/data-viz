@@ -1,6 +1,7 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "Bootflat/bootflat/scss/bootflat.scss";
 // endbower
 
 .browsehappy {
@@ -95,8 +96,8 @@ body {
   min-height: 50px;
   margin-bottom: 0px;
   border: none;
-  background-color: #5bc0de;
-  border-bottom: 1px solid #46b8da;
+  background-color: #3bafda;
+  border-bottom: 1px solid #3bafda;
   border-radius: 0px;
 }
 .navbar-header > .navbar-brand {
@@ -125,4 +126,7 @@ body {
 .teams-dropdown {
   padding: 0px;
   margin: 5px 3px;
+}
+.navbar-default .navbar-toggle {
+  display: none;
 }
