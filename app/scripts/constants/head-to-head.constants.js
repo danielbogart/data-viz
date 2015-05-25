@@ -80,10 +80,10 @@
 
 	var browns = {
 		teamName: "Cleveland Browns",
-		wins: [33, 11, 8, 11, 1, 9, 39, 15, 5, 4, 7, 3, 14, 5, 11, 8, 4, 12, 13, 26, 12, 10, 31, 58, 8, 17, 6, 9, 6, 34, 33, , 7, 6, 6, 8, 6, 2, 7],
-		losses: [13, 3, 24, 8, 4, 6, 44, 12, 19, 15, 11, 5, 14, 11, 11, 8, 10, 10, 4, 20, 9, 11, 16, 66, 14, 9, 11, 10, 3, 28, 11, , 0, 0, 0, 0, 2, 0, 0],
-		ties: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, , 0, 0, 2, 0, 0, 0, 1],
-		teams: ['Arizona Cardinals', 'Atlanta Falcons', 'Baltimore Ravens', 'Buffalo Bills', 'Carolina Panthers', 'Chicago Bears', 'Cincinnati Bengals', 'Dallas Cowboys', 'Denver Broncos', 'Detroit Lions', 'Green Bay Packers', 'Houston Texans', 'Indianapolis Colts', 'Jacksonville Jaguars', 'Kansas City Chiefs', 'Miami Dolphins', 'Minnesota Vikings', 'New England Patriots', 'New Orleans Saints', 'New York Giants', 'New York Jets', 'Oakland Raiders', 'Philadelphia Eagles', 'Pittsburgh Steelers', 'San Diego Chargers', 'San Francisco 49ers', 'Seattle Seahawks', 'St. Louis Rams', 'Tampa Bay Buccaneers', 'Tennessee Titans', 'Washington Redskins', 'Defunct Franchises', 'Baltimore Colts', 'Brooklyn Dodgers', 'Buffalo Bills', 'Chicago Hornets', 'Los Angeles Dons', 'Miami Seahawks', 'New York Yankees'],
+		wins: [33, 11, 8, 11, 1, 9, 39, 15, 5, 4, 7, 3, 14, 5, 11, 8, 4, 12, 13, 26, 12, 10, 31, 58, 8, 17, 6, 9, 6, 34, 33, 7, 6, 6, 8, 6, 2, 7],
+		losses: [13, 3, 24, 8, 4, 6, 44, 12, 19, 15, 11, 5, 14, 11, 11, 8, 10, 10, 4, 20, 9, 11, 16, 66, 14, 9, 11, 10, 3, 28, 11, 0, 0, 0, 0, 2, 0, 0],
+		ties: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 1],
+		teams: ['Arizona Cardinals', 'Atlanta Falcons', 'Baltimore Ravens', 'Buffalo Bills', 'Carolina Panthers', 'Chicago Bears', 'Cincinnati Bengals', 'Dallas Cowboys', 'Denver Broncos', 'Detroit Lions', 'Green Bay Packers', 'Houston Texans', 'Indianapolis Colts', 'Jacksonville Jaguars', 'Kansas City Chiefs', 'Miami Dolphins', 'Minnesota Vikings', 'New England Patriots', 'New Orleans Saints', 'New York Giants', 'New York Jets', 'Oakland Raiders', 'Philadelphia Eagles', 'Pittsburgh Steelers', 'San Diego Chargers', 'San Francisco 49ers', 'Seattle Seahawks', 'St. Louis Rams', 'Tampa Bay Buccaneers', 'Tennessee Titans', 'Washington Redskins', 'Baltimore Colts', 'Brooklyn Dodgers', 'Buffalo Bills', 'Chicago Hornets', 'Los Angeles Dons', 'Miami Seahawks', 'New York Yankees'],
 		winColor: '#26201E',
 		lossColor: '#E34912',
 		tieColor: '#000000'
@@ -113,10 +113,10 @@
 
 	var lions = {
 		teamName: "Detroit Lions",
-		wins: [33, 24, 1, 4, 2, 69, 3, 15, 11, 5, 67, 1, 18, 2, 5, 4, 36, 4, 10, 21, 7, 5, 13, 14, 4, 26, 5, 39, 30, 3, 13, , 1, 3, 12, 2, 2, 2, 3, 1, 3, 1, 1, 3],
-		losses: [27, 12, 3, 5, 5, 96, 8, 4, 12, 6, 95, 2, 21, 3, 7, 7, 69, 7, 11, 20, 6, 6, 16, 16, 6, 36, 7, 42, 26, 8, 27, , 0, 2, 3, 1, 0, 0, 1, 1, 1, 0, 0, 0],
-		ties: [5, 0, 0, 1, 0, 5, 0, 0, 0, 0, 7, 0, 2, 0, 0, 0, 2, 0, 1, 1, 0, 0, 2, 1, 0, 1, 0, 1, 0, 0, 0, , 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2],
-		teams: ['Arizona Cardinals', 'Atlanta Falcons', 'Baltimore Ravens', 'Buffalo Bills', 'Carolina Panthers', 'Chicago Bears', 'Cincinnati Bengals', 'Cleveland Browns', 'Dallas Cowboys', 'Denver Broncos', 'Green Bay Packers', 'Houston Texans', 'Indianapolis Colts', 'Jacksonville Jaguars', 'Kansas City Chiefs', 'Miami Dolphins', 'Minnesota Vikings', 'New England Patriots', 'New Orleans Saints', 'New York Giants', 'New York Jets', 'Oakland Raiders', 'Philadelphia Eagles', 'Pittsburgh Steelers', 'San Diego Chargers', 'San Francisco 49ers', 'Seattle Seahawks', 'St. Louis Rams', 'Tampa Bay Buccaneers', 'Tennessee Titans', 'Washington Redskins', 'Defunct Franchises', 'Baltimore Colts', 'Boston Yanks', 'Brooklyn Tigers', 'Cincinnati Reds', 'Cleveland Indians', 'Dallas Texans', 'Frankford Yellow Jackets', 'Minneapolis Red Jackets', 'New York Yanks', 'Newark Tornadoes', 'St. Louis Gunners', 'Staten Island Stapletons'],
+		wins: [33, 24, 1, 4, 2, 69, 3, 15, 11, 5, 67, 1, 18, 2, 5, 4, 36, 4, 10, 21, 7, 5, 13, 14, 4, 26, 5, 39, 30, 3, 13, 1, 3, 12, 2, 2, 2, 3, 1, 3, 1, 1, 3],
+		losses: [27, 12, 3, 5, 5, 96, 8, 4, 12, 6, 95, 2, 21, 3, 7, 7, 69, 7, 11, 20, 6, 6, 16, 16, 6, 36, 7, 42, 26, 8, 27, 0, 2, 3, 1, 0, 0, 1, 1, 1, 0, 0, 0],
+		ties: [5, 0, 0, 1, 0, 5, 0, 0, 0, 0, 7, 0, 2, 0, 0, 0, 2, 0, 1, 1, 0, 0, 2, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2],
+		teams: ['Arizona Cardinals', 'Atlanta Falcons', 'Baltimore Ravens', 'Buffalo Bills', 'Carolina Panthers', 'Chicago Bears', 'Cincinnati Bengals', 'Cleveland Browns', 'Dallas Cowboys', 'Denver Broncos', 'Green Bay Packers', 'Houston Texans', 'Indianapolis Colts', 'Jacksonville Jaguars', 'Kansas City Chiefs', 'Miami Dolphins', 'Minnesota Vikings', 'New England Patriots', 'New Orleans Saints', 'New York Giants', 'New York Jets', 'Oakland Raiders', 'Philadelphia Eagles', 'Pittsburgh Steelers', 'San Diego Chargers', 'San Francisco 49ers', 'Seattle Seahawks', 'St. Louis Rams', 'Tampa Bay Buccaneers', 'Tennessee Titans', 'Washington Redskins', 'Baltimore Colts', 'Boston Yanks', 'Brooklyn Tigers', 'Cincinnati Reds', 'Cleveland Indians', 'Dallas Texans', 'Frankford Yellow Jackets', 'Minneapolis Red Jackets', 'New York Yanks', 'Newark Tornadoes', 'St. Louis Gunners', 'Staten Island Stapletons'],
 		winColor: '#006DB0',
 		lossColor: '#C5C7CF',
 		tieColor: '#000000'
