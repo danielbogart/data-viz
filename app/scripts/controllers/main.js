@@ -5,9 +5,9 @@
 		.module('dataVizApp')
 		.controller('MainCtrl', MainCtrl);
 
-		MainCtrl.$inject = ['$scope', '$stateParams', 'mainService', 'titans', 'niners'];
+		MainCtrl.$inject = ['$scope', '$stateParams', 'mainService', 'niners'];
 
-		function MainCtrl($scope, $stateParams, mainService, titans, niners) {
+		function MainCtrl($scope, $stateParams, mainService, niners) {
 
 			var vm = $scope;
 			var teamObject = mainService.getTeamObject($stateParams.team);

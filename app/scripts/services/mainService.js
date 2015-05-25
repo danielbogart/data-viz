@@ -6,9 +6,9 @@
 		.factory('mainService', mainService);
 
 
-		mainService.$inject = ['titans', 'niners', 'cardinals', 'falcons', 'eagles'];
+		mainService.$inject = ['cardinals', 'falcons', 'ravens', 'bills', 'panthers', 'bears', 'bengals', 'browns', 'cowboys', 'broncos', 'lions', 'packers', 'texans', 'colts', 'jaguars', 'chiefs', 'dolphins', 'vikings', 'patriots', 'saints', 'giants', 'jets', 'raiders', 'eagles', 'steelers', 'chargers', 'niners', 'seahawks', 'rams', 'buccaneers', 'titans', 'redskins'];
 
-		function mainService(titans, niners, cardinals, falcons, eagles) {
+		function mainService(cardinals, falcons, ravens, bills, panthers, bears, bengals, browns, cowboys, broncos, lions, packers, texans, colts, jaguars, chiefs, dolphins, vikings, patriots, saints, giants, jets, raiders, eagles, steelers, chargers, niners, seahawks, rams, buccaneers, titans, redskins) {
 
 			var service = {
 				getChartConfig: getChartConfig,
@@ -20,12 +20,40 @@
 
 			function getTeamObject(team) {
 				var teams = { 
-					'titans': titans,
-					'niners': niners,
 					'cardinals': cardinals,
 					'falcons': falcons,
-					'eagles': eagles
+					'ravens': ravens,
+					'bills': bills,
+					'panthers': panthers,
+					'bears': bears,
+					'bengals': bengals,
+					'browns': browns,
+					'cowboys': cowboys,
+					'broncos': broncos,
+					'lions': lions,
+					'packers': packers,
+					'texans': texans,
+					'colts': colts,
+					'jaguars': jaguars,
+					'chiefs': chiefs,
+					'dolphins': dolphins,
+					'vikings': vikings,
+					'patriots': patriots,
+					'saints': saints,
+					'giants': giants,
+					'jets': jets,
+					'raiders': raiders,
+					'eagles': eagles,
+					'steelers': steelers,
+					'chargers': chargers,
+					'niners': niners,
+					'seahawks': seahawks,
+					'rams': rams,
+					'buccaneers': buccaneers,
+					'titans': titans,
+					'redskins': redskins
 				}
+
 				return teams[team];
 			}
 
