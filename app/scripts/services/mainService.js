@@ -91,7 +91,7 @@
 										return this.x +
                     					'<br>' + '<br/><span style="color:'+ this.series.color +'">\u25CF</span> ' + 
                     					this.series.name + ': <b>' + this.y + '</b> ' +
-                    					'<br><span style="color:black">\u25CF</span> Win rate: ' + 
+                    					'<br><span style="color:#434A54">\u25CF</span> Win rate: ' + 
                     					'<b>' + winRates[(teamObject.teams.indexOf(this.x))] + '%</b>'; 
                     				}
 								},
@@ -145,14 +145,18 @@
 							                }
 							}],
 							title: {
-								text: teamObject.teamName + '<br>' + overallRecord
+								text: teamObject.teamName + '<br>' + overallRecord,
+									style: { 
+										color: '#434A54',
+										fontWeight: 'bold'
+									}
 							},
 							xAxis: {
 								categories: teamObject.teams,
 								tickLength: 0,
 								labels: {
 									style: { 
-										color: 'black',
+										color: '#434A54',
 									}
 								}
 							},
@@ -160,7 +164,7 @@
 								minTickInterval: 10,
 								labels: {
 									style: { 
-										color: 'black',
+										color: '#434A54',
 									}
 								}
 							},

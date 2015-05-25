@@ -117,15 +117,18 @@ body {
   -moz-box-shadow: 0 0 8px #CCC;
   -webkit-box-shadow: 0 0 12px 6px #CCC;
 }
-.share-buttons > .fb-share-button, .share-buttons > .twitter-share-button {
-  margin: 5px;
+.share-buttons .twitter-share-button {
+  margin: 5px 3px 0px 3px;
+}
+.share-buttons .fb-share-button {
+  margin: 0px 3px;
 }
 .data-row {
   margin: 0px 20px 0px 20px;
 }
 .teams-dropdown {
   padding: 0px;
-  margin: 5px 3px;
+  margin: 3px 3px;
 }
 .navbar-default .navbar-toggle {
   display: none;
