@@ -2,50 +2,54 @@
   <div class="col-md-3 title-box">
     <h1>NFL All Time Heads Up Records</h1>
     <h5>Created by <a href="https://twitter.com/daniel_bogart">@daniel_bogart</a></h5>
-    <div ng-controller='DropdownCtrl' class="col-md-12 teams-dropdown">
-        <div class="btn-group pull-left" dropdown is-open="status.isopen">
-          <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-            Choose Team <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a ui-sref="main({team: 'cardinals'})">Arizona Cardinals</a></li>
-            <li><a ui-sref="main({team: 'falcons'})">Atlanta Falcons</a></li>
-            <li><a ui-sref="main({team: 'ravens'})">Baltimore Ravens</a></li>
-            <li><a ui-sref="main({team: 'bills'})">Buffalo Bills</a></li>
-            <li><a ui-sref="main({team: 'panthers'})">Carolina Panthers</a></li>
-            <li><a ui-sref="main({team: 'bears'})">Chicago Bears</a></li>
-            <li><a ui-sref="main({team: 'bengals'})">Cincinnati Bengals</a></li>
-            <li><a ui-sref="main({team: 'browns'})">Cleveland Browns</a></li>
-            <li><a ui-sref="main({team: 'cowboys'})">Dallas Cowboys</a></li>
-            <li><a ui-sref="main({team: 'broncos'})">Denver Broncos</a></li>
-            <li><a ui-sref="main({team: 'lions'})">Detroit Lions</a></li>
-            <li><a ui-sref="main({team: 'packers'})">Green Bay Packers</a></li>
-            <li><a ui-sref="main({team: 'texans'})">Houston Texans</a></li>
-            <li><a ui-sref="main({team: 'colts'})">Indianapolis Colts</a></li>
-            <li><a ui-sref="main({team: 'jaguars'})">Jacksonville Jaguars</a></li>
-            <li><a ui-sref="main({team: 'chiefs'})">Kansas City Chiefs</a></li>
-            <li><a ui-sref="main({team: 'dolphins'})">Miami Dolphins</a></li>
-            <li><a ui-sref="main({team: 'vikings'})">Minnesota Vikings</a></li>
-            <li><a ui-sref="main({team: 'patriots'})">New England Patriots</a></li>
-            <li><a ui-sref="main({team: 'saints'})">New Orleans Saints</a></li>
-            <li><a ui-sref="main({team: 'giants'})">New York Giants</a></li>
-            <li><a ui-sref="main({team: 'jets'})">New York Jets</a></li>
-            <li><a ui-sref="main({team: 'raiders'})">Oakland Raiders</a></li>
-            <li><a ui-sref="main({team: 'eagles'})">Philedelphi Eagles</a></li>
-            <li><a ui-sref="main({team: 'steelers'})">Pittsburgh Steelers</a></li>
-            <li><a ui-sref="main({team: 'chargers'})">San Diego Chargers</a></li>
-            <li><a ui-sref="main({team: 'niners'})">San Francisco 49ers</a></li>
-            <li><a ui-sref="main({team: 'seahawks'})">Seattle Seahawks</a></li>
-            <li><a ui-sref="main({team: 'rams'})">St. Louis Rams</a></li>
-            <li><a ui-sref="main({team: 'buccaneers'})">Tampa Bay Buccaneers</a></li>
-            <li><a ui-sref="main({team: 'titans'})">Tennesse Titans</a></li>
-            <li><a ui-sref="main({team: 'redskins'})">Washington Redskins</a></li>
-          </ul>
-        </div>
+    <div class="row">
+      <div ng-controller='DropdownCtrl' class="col-md-12 teams-dropdown">
+          <div class="btn-group pull-left" dropdown is-open="status.isopen">
+            <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+              Choose Team <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a ui-sref="main({team: 'cardinals'})">Arizona Cardinals</a></li>
+              <li><a ui-sref="main({team: 'falcons'})">Atlanta Falcons</a></li>
+              <li><a ui-sref="main({team: 'ravens'})">Baltimore Ravens</a></li>
+              <li><a ui-sref="main({team: 'bills'})">Buffalo Bills</a></li>
+              <li><a ui-sref="main({team: 'panthers'})">Carolina Panthers</a></li>
+              <li><a ui-sref="main({team: 'bears'})">Chicago Bears</a></li>
+              <li><a ui-sref="main({team: 'bengals'})">Cincinnati Bengals</a></li>
+              <li><a ui-sref="main({team: 'browns'})">Cleveland Browns</a></li>
+              <li><a ui-sref="main({team: 'cowboys'})">Dallas Cowboys</a></li>
+              <li><a ui-sref="main({team: 'broncos'})">Denver Broncos</a></li>
+              <li><a ui-sref="main({team: 'lions'})">Detroit Lions</a></li>
+              <li><a ui-sref="main({team: 'packers'})">Green Bay Packers</a></li>
+              <li><a ui-sref="main({team: 'texans'})">Houston Texans</a></li>
+              <li><a ui-sref="main({team: 'colts'})">Indianapolis Colts</a></li>
+              <li><a ui-sref="main({team: 'jaguars'})">Jacksonville Jaguars</a></li>
+              <li><a ui-sref="main({team: 'chiefs'})">Kansas City Chiefs</a></li>
+              <li><a ui-sref="main({team: 'dolphins'})">Miami Dolphins</a></li>
+              <li><a ui-sref="main({team: 'vikings'})">Minnesota Vikings</a></li>
+              <li><a ui-sref="main({team: 'patriots'})">New England Patriots</a></li>
+              <li><a ui-sref="main({team: 'saints'})">New Orleans Saints</a></li>
+              <li><a ui-sref="main({team: 'giants'})">New York Giants</a></li>
+              <li><a ui-sref="main({team: 'jets'})">New York Jets</a></li>
+              <li><a ui-sref="main({team: 'raiders'})">Oakland Raiders</a></li>
+              <li><a ui-sref="main({team: 'eagles'})">Philedelphi Eagles</a></li>
+              <li><a ui-sref="main({team: 'steelers'})">Pittsburgh Steelers</a></li>
+              <li><a ui-sref="main({team: 'chargers'})">San Diego Chargers</a></li>
+              <li><a ui-sref="main({team: 'niners'})">San Francisco 49ers</a></li>
+              <li><a ui-sref="main({team: 'seahawks'})">Seattle Seahawks</a></li>
+              <li><a ui-sref="main({team: 'rams'})">St. Louis Rams</a></li>
+              <li><a ui-sref="main({team: 'buccaneers'})">Tampa Bay Buccaneers</a></li>
+              <li><a ui-sref="main({team: 'titans'})">Tennesse Titans</a></li>
+              <li><a ui-sref="main({team: 'redskins'})">Washington Redskins</a></li>
+            </ul>
+          </div>
+      </div>
     </div>
-    <div class="share-buttons">
-      <div data-tweet=""></div>
-      <div data-fb-like=""></div>
+    <div class="row">
+      <div class="col-md-12 share-buttons">
+        <div data-tweet=""></div>
+        <div data-fb-like=""></div>
+      </div>
     </div>
   </div>
   <div class="col-md-9">
